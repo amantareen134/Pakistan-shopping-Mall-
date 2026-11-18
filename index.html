@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pakistan Shopping Mall</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,Tahoma,sans-serif;background:#f4f6f9;color:#172b4d}
+header{background:#12345a;color:white;padding:20px;text-align:center}
+header h1{font-size:24px;margin:5px}
+header p{margin:8px}
+nav{background:#1769aa;padding:13px;text-align:center}
+nav a{color:white;text-decoration:none;margin:0 10px}
+.hero{background:#e1efff;padding:35px 15px;text-align:center}
+.hero h2{font-size:30px;color:#12345a}
+button{background:#1769aa;color:white;border:0;padding:12px 20px;border-radius:7px;cursor:pointer}
+main{padding:20px;max-width:1100px;margin:auto}
+h2{text-align:center}
+.categories,.products{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:14px}
+.item{background:white;padding:20px 10px;text-align:center;border-radius:10px;box-shadow:0 2px 8px #0001}
+.item span{font-size:35px}
+.product{background:white;padding:18px;text-align:center;border-radius:10px}
+.product span{font-size:42px}
+footer{background:#12345a;color:white;text-align:center;padding:25px;margin-top:30px}
+</style>
+</head>
+<body>
+<header>
+<h1>PAKISTAN SHOPPING MALL</h1>
+<p>پاکستان کی اپنی آن لائن مارکیٹ</p>
+</header>
+<nav>
+<a href="#">ہوم</a>
+<a href="#categories">اقسام</a>
+<a href="#products">مصنوعات</a>
+<a href="#contact">رابطہ</a>
+</nav>
+<section class="hero">
+<h2>خوش آمدید!</h2>
+<p>پاکستان بھر میں آن لائن خریداری کا نیا انداز</p>
+<button onclick="document.getElementById('products').scrollIntoView()">خریداری شروع کریں</button>
+</section>
+<main>
+<h2 id="categories">مصنوعات کی اقسام</h2>
+<div class="categories">
+<div class="item"><span>👕</span><p>کپڑے</p></div>
+<div class="item"><span>👟</span><p>جوتے</p></div>
+<div class="item"><span>📱</span><p>موبائل</p></div>
+<div class="item"><span>💄</span><p>کاسمیٹکس</p></div>
+<div class="item"><span>🏠</span><p>گھریلو سامان</p></div>
+<div class="item"><span>🎒</span><p>بیگز</p></div>
+</div>
+<h2 id="products">منتخب مصنوعات</h2>
+<div class="products">
+<div class="product"><span>👔</span><h3>مردانہ قمیض</h3><p>جلد دستیاب ہوگی</p></div>
+<div class="product"><span>📱</span><h3>موبائل کور</h3><p>موبائل ماڈل کے مطابق</p></div>
+<div class="product"><span>👠</span><h3>خواتین کے جوتے</h3><p>مختلف سائز اور رنگ</p></div>
+<div class="product"><span>🧴</span><h3>باڈی مسٹ</h3><p>مختلف خوشبوئیں</p></div>
+</div>
+</main>
+<footer id="contact">
+<h3>Pakistan Shopping Mall</h3>
+<p>پاکستان کی اپنی آن لائن مارکیٹ</p>
+</footer>
+</body>
+</html>
