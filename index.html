@@ -63,22 +63,13 @@ footer{background:#12345a;color:white;text-align:center;padding:25px;margin-top:
   </div>
 <h2 id="products">منتخب مصنوعات</h2>
 <div class="products">
-<div class="product"><span>👔</span><h3>مردانہ قمیض</h3><p>جلد دستیاب ہوگی</p></div>
-<div class="product"><span>📱</span><h3>موبائل کور</h3><p>موبائل ماڈل کے مطابق</p></div>
-<div class="product"><span>👠</span><h3>خواتین کے جوتے</h3><p>مختلف سائز اور رنگ</p></div>
-<div class="product"><span>🧴</span><h3>باڈی مسٹ</h3><p>مختلف خوشبوئیں</p></div>
-</div>
-</main>
-<footer id="contact">
-<h3>Pakistan Shopping Mall</h3>
-<p>پاکستان کی اپنی آن لائن مارکیٹ</p>
-</footer>
-</body>
-  <script>
-function searchProducts() {
-  let input = document.getElementById("productSearch").value.toLowerCase();
-  let products = document.querySelectorAll(".product");
 
+<div class="product">
+  <span>👔</span>
+  <h3>مردانہ قمیض</h3>
+  <p>قیمت: 1500 روپے</p>
+  <button>خریدیں</button>
+</div>
   products.forEach(function(product) {
     let text = product.innerText.toLowerCase();
 
