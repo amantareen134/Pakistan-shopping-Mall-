@@ -52,6 +52,15 @@ footer{background:#12345a;color:white;text-align:center;padding:25px;margin-top:
 <div class="item"><span>🏠</span><p>گھریلو سامان</p></div>
 <div class="item"><span>🎒</span><p>بیگز</p></div>
 </div>
+  <div style="margin:20px 0;">
+  <input
+    type="search"
+    id="productSearch"
+    placeholder="اپنی پسند کی چیز تلاش کریں..."
+    style="width:100%;padding:14px;border:1px solid #ccc;border-radius:10px;font-size:16px;"
+    oninput="searchProducts()"
+  >
+  </div>
 <h2 id="products">منتخب مصنوعات</h2>
 <div class="products">
 <div class="product"><span>👔</span><h3>مردانہ قمیض</h3><p>جلد دستیاب ہوگی</p></div>
@@ -65,4 +74,20 @@ footer{background:#12345a;color:white;text-align:center;padding:25px;margin-top:
 <p>پاکستان کی اپنی آن لائن مارکیٹ</p>
 </footer>
 </body>
+  <script>
+function searchProducts() {
+  let input = document.getElementById("productSearch").value.toLowerCase();
+  let products = document.querySelectorAll(".product");
+
+  products.forEach(function(product) {
+    let text = product.innerText.toLowerCase();
+
+    if (text.includes(input)) {
+      product.style.display = "";
+    } else {
+      product.style.display = "none";
+    }
+  });
+}
+  </script>
 </html>
